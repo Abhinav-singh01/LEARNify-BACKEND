@@ -176,12 +176,7 @@ exports.getCourseDetails = async (req, res) => {
             });
         }
 
-        // if (courseDetails.status === "Draft") {
-        //   return res.status(403).json({
-        //     success: false,
-        //     message: `Accessing a draft course is forbidden`,
-        //   });
-        // }
+     
 
         // console.log('courseDetails -> ', courseDetails)
         let totalDurationInSeconds = 0
@@ -257,13 +252,7 @@ exports.getFullCourseDetails = async (req, res) => {
             })
         }
 
-        // if (courseDetails.status === "Draft") {
-        //   return res.status(403).json({
-        //     success: false,
-        //     message: `Accessing a draft course is forbidden`,
-        //   });
-        // }
-
+     
         //   count total time duration of course
         let totalDurationInSeconds = 0
         courseDetails.courseContent.forEach((content) => {
